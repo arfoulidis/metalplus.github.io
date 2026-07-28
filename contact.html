@@ -215,7 +215,7 @@
 							</div>
 
 							<h2 class="heading-primary mb-sm mt-sm"><strong>Φόρμα </strong>Επικοινωνίας</h2>
-							<form id="contactFormAdvanced" name="contact" action="/contact.html#contact-sent" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
+							<form id="contactFormAdvanced" name="contact" action="/thank-you.html" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" enctype="multipart/form-data">
 								<input type="hidden" name="form-name" value="contact">
 								<!-- Honeypot field: hidden from real users, traps bots -->
 								<p style="display:none">
@@ -456,16 +456,7 @@
 			$(this).find('iframe').removeClass('clicked')});
         </script>
 
-		<!-- Show success message if Netlify redirects with ?success=1 -->
-		<script>
-			(function() {
-				var params = new URLSearchParams(window.location.search);
-				if (params.get('success') === '1') {
-					document.getElementById('contactSuccess').style.display = 'block';
-					document.getElementById('contact-sent').scrollIntoView();
-				}
-			})();
-		</script>
+
         
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
